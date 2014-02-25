@@ -1,0 +1,22 @@
+// area dl rectangulo.cpp : Defines the entry point for the console application.
+// autor: Junior Perez 
+// fecha: 25-02-2014
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main(){
+	float base, altura,area;
+	cout<<"claculo del area del rectangulo\n";
+	cout<<"ingrese la altura:";
+	cin>>altura;
+	cout<<"ingrese la base:";
+	cin>>base;
+	area=(base*altura);
+	cout<<"el area del rectangulo es:";
+	cout<<area;
+    getch();
+
+}
