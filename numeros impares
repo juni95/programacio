@@ -1,0 +1,27 @@
+// Numeros Impares:Defines the entry point for the console application.
+//Autor:Junior Perez
+//Fecha:25/03/14
+{
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+{
+   int a,b,c,prod,sum;
+   cin>>a;
+   cin>>b;
+   if (a%2!=0&& b%2!=0)
+   {
+     sum=a+b;
+     cout<<sum;
+   }
+   else
+   {
+     prod=a*b;
+   }
+   getch();
+
+}
