@@ -1,0 +1,48 @@
+
+// menu.cpp : Defines the entry point for the console application.
+//nombre. Junior Perez
+//fecha: 15/04/14
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+
+
+using namespace std;
+void main()
+{
+ int a,b,suma,opcion,multiplicacion,resta;
+ float division;
+ cout<<"ingrese el valor a:";
+ cin>>a;
+ cout<<"ingrese el valor b:";
+ cin>>b;
+ do
+ {
+ cout<<"\n1.sumar\n";
+ cout<<"2.restar\n";
+ cout<<"3.multiplicar\n";
+ cout<<"4.dividir\n";
+ cout<<"5.salir\n";
+ cin>>opcion;
+ if(opcion ==1)
+ {suma=a+b;
+ cout<<"\n\nla suma es"<<suma;}
+ if(opcion==2)
+ {resta=a-b;
+ cout<<"la resta es"<<resta;}
+ if(opcion==3)
+ {
+ multiplicacion=a*b;
+ cout<<"la multiplicacion es"<<multiplicacion;}
+ if(opcion==4)
+ {division=a/b;
+ cout<<"la division es"<<division;}
+ }
+ while(opcion!=5);
+
+}
+
