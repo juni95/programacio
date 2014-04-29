@@ -1,0 +1,55 @@
+// menu.cpp : Defines the entry point for the console application.
+// nombre:Junior Perez
+// fecha:29/04/
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+void main()
+{ 
+float a,l,pi,r,b,h,cuadrado,circulo,triangulo;
+int opcion;
+do{
+ cout<<"1.cuadrado\n";
+ cout<<"2.circulo\n";
+ cout<<"3.triangulo\n";
+ cout<<"0.salir\n";
+ cin>>opcion;
+ switch(opcion)
+ { 
+ case 1:{;
+  cout<<"ingrese lado";
+  cin>>l;
+  a=l*l;
+  cout<<a;
+		}
+     break;
+ case 2:{;
+     cout<<"ingrese radio";
+	 cin>>r;
+	 a=3.14* pow(r,2);
+	 cout<<a;}
+     break;
+case 3:{;
+     cout<<"ingrese base";
+	 cin>>b;
+	 cout<<"ingrese altura";
+	 cin>>h;
+	 a=(b*h)/2;
+	 cout<<a;}
+     break;
+case 0: cout<<"Salir";
+     break;
+    default: cout << "Opcion invalida" << endl;
+ }
+
+	getch();
+	system ("cls");
+}
+while (opcion!=0);
+ 
+}
+
